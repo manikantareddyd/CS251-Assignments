@@ -57,10 +57,8 @@ The equakity above is obvious by simple algebraic identiy
 \frac{1-x^n}{1-x} = 1+x+...+x^{n-1}
 \end{equation}
 Using a simple integral transform ${x = 1-u}$, an elegant combinatorial expression for $H_{n}$ is
-\begin{proof}
-\begin{align*}
+\begin{align}
 H_{n} &= \int_{0}^{1} \frac{1-x^n}{1-x} dx \\
-	 &= -\int_{0}^{1} dx
-\end{align*}
-\end{proof}
+	 &= -\int_{1}^{0} \frac{1-{(1-u)}^n}{u} dx
+\end{align}
 \end{document}
