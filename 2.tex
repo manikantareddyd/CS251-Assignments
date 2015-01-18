@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage{amsmath} 
+\usepackage{amsmath,amsthm,amssymb} 
 \title{Harmonic Number}
 \begin{document}
 \date{\vspace{-5ex}}
@@ -57,8 +57,10 @@ The equakity above is obvious by simple algebraic identiy
 \frac{1-x^n}{1-x} = 1+x+...+x^{n-1}
 \end{equation}
 Using a simple integral transform ${x = 1-u}$, an elegant combinatorial expression for $H_{n}$ is
-\begin{equation}
-H_{n} = \int_{0}^{1} \frac{1-x^n}{1-x} dx
-	  = -\int_{0}^{1} dx
-\end{equation}
+\begin{proof}
+\begin{align*}
+H_{n} &= \int_{0}^{1} \frac{1-x^n}{1-x} dx \\
+	 &= -\int_{0}^{1} dx
+\end{align*}
+\end{proof}
 \end{document}
