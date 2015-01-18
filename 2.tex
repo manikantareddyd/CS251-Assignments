@@ -1,8 +1,10 @@
 \documentclass{article}
+\usepackage{amsmath} 
 \title{Harmonic Number}
 \begin{document}
 \date{\vspace{-5ex}}
 \maketitle
+\section{Introduction}
 \begin{flushleft}
 The term \emph{Harmonic number} has multiple meanings.
 \end{flushleft}
@@ -20,13 +22,30 @@ When the value of a large quantity of items has a Zipf's law distribution, the t
 
 Bertrand's postulate entails that, except for the case n=1, the harmonic numbers are never integers.
 \\
-\underline{\textbf{Identities involving harmonic numbers}}\\
+\section{Identities involving harmonic numbers}
 By definition, the harmonic numbers satisfy the \emph{recurrence relation}
 \begin{equation} 
 H_{n}=H_{n-1}+\frac{1}{n} \label{recurrence relation}
 \end{equation}
 They also satisfy the series Identity
 \begin{equation}
-\sum_{k=1}^n H_{k} = (n+1) H_{n} - n
+\sum_{k=1}^n H_{k} = (n+1) H_{n} - n \label{Series Identity}
 \end{equation}
+The Harmonic numbers are connected the \emph{Stirling Numbers} of first kind
+\begin{equation}
+H_{n} = \frac{1}{n!} {n+1 \choose 2} \label{Stirling Identity}
+\end{equation}
+The functions
+\begin{equation}
+f_{n} (x) = \frac{x^n}{n!} (logx-H_{n})
+\end{equation}
+satisfy the property
+\begin{equation}
+{f'}_{n} (x) = f_{n-1} (x)
+\end{equation}
+In particular
+\begin{equation}
+f_{1} (x) = x(logx-1)       			
+\end{equation}
+\section{Eulerian Representation}
 \end{document}
