@@ -59,6 +59,10 @@ The equakity above is obvious by simple algebraic identiy
 Using a simple integral transform ${x = 1-u}$, an elegant combinatorial expression for $H_{n}$ is
 \begin{align}
 H_{n} &= \int_{0}^{1} \frac{1-x^n}{1-x} dx \\
-	 &= -\int_{1}^{0} \frac{1-{(1-u)}^n}{u} dx
+	 &= -\int_{1}^{0} \frac{1-{(1-u)}^n}{u} dx \\
+	 &= \int_{0}^{1} \frac{1-{(1-u)}^n}{u} dx \\
+	 &= \int_{0}^{1} \bigg{[}\sum_{k=1}^{n} (-1)^{k-1} {n \choose k} u^{k-1}\bigg{]}dx \\
+	 &= \sum_{k=1}^{n} (-1)^{k-1} {n \choose k} \int_{0}^{1} u^{k-1} dx\\
+	 &= \sum_{k=1}^{n} (-1)^{k-1} \frac{1}{k} {n \choose k}
 \end{align}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.18)  18 JAN 2015 12:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.18)  18 JAN 2015 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -152,11 +152,11 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 Here is how much of TeX's memory you used:
  1204 strings out of 494985
  13390 string characters out of 6180356
- 64033 words of memory out of 5000000
+ 66033 words of memory out of 5000000
  4454 multiletter control sequences out of 15000+600000
  11234 words of font info for 44 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 27i,9n,26p,416b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,26p,416b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
@@ -168,7 +168,7 @@ amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
 b>
-Output written on 2.pdf (2 pages, 103626 bytes).
+Output written on 2.pdf (2 pages, 104417 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
