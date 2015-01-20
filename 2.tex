@@ -65,4 +65,12 @@ H_{n} &= \int_{0}^{1} \frac{1-x^n}{1-x} dx \\
 	 &= \sum_{k=1}^{n} (-1)^{k-1} {n \choose k} \int_{0}^{1} u^{k-1} dx\\
 	 &= \sum_{k=1}^{n} (-1)^{k-1} \frac{1}{k} {n \choose k}
 \end{align}
+The same repreentation can b produced by using the third \emph{Retkes Identity} by setting $x_{1} = 1, . . . , x_{n} = n$ and using the fact that
+\begin{equation}
+{\Pi}_{k}(1, . . . , n) = {(-1)}^{n-k} (k-1)!(n-k)!
+\end{equation}
+\begin{equation}
+H_{n}=H_{n,1}=\sum_{k=1}^{n} \frac{1}{k} = {(-1)}^{n-1}n!\sum_{k=1}^{n}\frac{1}{k^{2}{\Pi}_{k}(1, . . . ,n)}=\sum_{k=1}^{n}{(-1)}^{k-1}\frac{1}{k}{n \choose k}
+\end{equation}
+The $n^{th}$ harmonic
 \end{document}
