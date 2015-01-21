@@ -1,11 +1,13 @@
-\documentclass{article}
-\usepackage{amsmath,amsthm,amssymb} 
- \usepackage{graphicx}
+\documentclass[2pt]{article}
+\usepackage{amsmath,amsthm,amssymb,geometry,graphicx,wrapfig}
+\usepackage[font={small,it}]{caption}
 \title{Harmonic Number}
 \begin{document}
 \date{\vspace{-5ex}}
 \maketitle
 \section{Introduction}
+\begin{wrapfigure}{r}{8cm}
+\includegraphics[width=8cm]{1.png}\caption{\small{The harmonic number $H_{n,1}$ with $n=\lfloor{x}\rfloor$ (red line) with its asymptotic limit $\gamma+\ln(x)$ (blue line).}}\end{wrapfigure}
 \begin{flushleft}
 The term \emph{Harmonic number} has multiple meanings.
 \end{flushleft}
@@ -13,14 +15,11 @@ In mathematics, the n-th harmonic number is the sum of the reciprocals of the fi
 \begin{equation}
 H_{n}=1+\frac{1}{2}+\frac{1}{3}+...+\frac{1}{n}=\sum_{i=1}^n \frac{1}{n} \label{nth harmonic number}
 \end{equation}
-This also equals n times the inverse of the \emph{harmonic mean} of these natural numbers.
 
-Harmonic numbers were studied in antiquity and are important in various branches of number theory. They are sometimes loosely termed harmonic series, are closely related to the Riemann zeta function, and appear in the expressions of various special functions.
-
-The associated harmonic series grows without limit, albeit very slowly, roughly approaching the natural logarithm function. In 1737, Leonhard Euler used the divergence of this series to provide a new proof of the infinity of prime numbers. His work was extended into the complex plane by Bernhard Riemann in 1859, leading directly to the celebrated Riemann hypothesis about the distribution of prime numbers.
-
-When the value of a large quantity of items has a Zipf's law distribution, the total value of the n most-valuable items is the n-th harmonic number. This leads to a variety of surprising conclusions in the Long Tail and the theory of network value.
-
+This also equals n times the inverse of the \emph{harmonic mean} of these natural numbers.\\
+Harmonic numbers were studied in antiquity and are important in various branches of number theory. They are sometimes loosely termed harmonic series, are closely related to the Riemann zeta function, and appear in the expressions of various special functions.\\
+The associated harmonic series grows without limit, albeit very slowly, roughly approaching the natural logarithm function. In 1737, Leonhard Euler used the divergence of this series to provide a new proof of the infinity of prime numbers. His work was extended into the complex plane by Bernhard Riemann in 1859, leading directly to the celebrated Riemann hypothesis about the distribution of prime numbers.\\
+When the value of a large quantity of items has a Zipf's law distribution, the total value of the n most-valuable items is the n-th harmonic number. This leads to a variety of surprising conclusions in the Long Tail and the theory of network value.\\
 Bertrand's postulate entails that, except for the case n=1, the harmonic numbers are never integers.
 \\
 \section{Identities involving harmonic numbers}
@@ -73,5 +72,36 @@ The same repreentation can b produced by using the third \emph{Retkes Identity} 
 \begin{equation}
 H_{n}=H_{n,1}=\sum_{k=1}^{n} \frac{1}{k} = {(-1)}^{n-1}n!\sum_{k=1}^{n}\frac{1}{k^{2}{\Pi}_{k}(1, . . . ,n)}=\sum_{k=1}^{n}{(-1)}^{k-1}\frac{1}{k}{n \choose k}
 \end{equation}
-The $n^{th}$ harmonic number is about as large as the \emph{natural logarithm} of $n$. Th reason 
+\begin{wrapfigure}{r}{6cm}
+\includegraphics[width=6cm]{2.png}
+\caption{\small{Graph demonstrating a connection between harmonic numbers and the natural logarithm. The harmonic number $H_{n}$ can be interpreted as a Riemann sum of the integral: $\int_1^{n+1} \frac{1}{x} \mathrm{d}x = \ln(n+1)$}}
+\end{wrapfigure}
+The $n^{th}$ harmonic number is about as large as the \emph{natural logarithm} of $n$. The reason is that the sum is approxiamted by the integral
+\begin{equation}
+\int_{1}^{n} \frac{1}{x} dx
+\end{equation}
+whose value is \emph{ln(n)} \\
+The values of the sequence $H_{n} - ln(n)$ decreases mootonically towards the \emph{limit}
+\begin{equation}
+\lim_{n \to \infty} (H_{n} - ln(n)) = \gamma
+\end{equation}
+where $\gamma \sim 0.5772156649$ is the \emph{Euler-Mascheroni Constant}. The correspondng \emph{asymptotic expansion} as $n \to \infty$ is
+\\\\\\
+\begin{equation}
+H_{n} \sim ln \emph{n} + \gamma + \frac{1}{2n}-\sum_{k=1}^{\infty} \frac{B_{2k}}{skn^{2k}}=ln \emph{n} + \gamma + \frac{1}{2n} - \frac{1}{12n^2}+\frac{1}{120n^4}-...
+\end{equation}
+where $B_{k}$ are the \emph{Bernoulli Numbers}.
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
