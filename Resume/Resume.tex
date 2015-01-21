@@ -34,14 +34,16 @@
 		\hspace{1.5em} #2 \par}					
 		
 \newcommand{\EducationEntry}[4]{
-		\noindent \textbf{#1} \hfill 					
-		\colorbox{Black}{%
-			\parbox{6em}{%
-			\hfill\color{White}#2}} \par				
-		\noindent \textit{#3} \par				
-		\noindent\hangindent=2em\hangafter=0 \small #4 	
+		\noindent \textbf{#1} \hfill 	{#2} \par				
+		\noindent \textit{#3} \par	
+		\noindent #4 	
 		\normalsize \par}
-
+		
+\newcommand{\ScholasticAcheivements}[4]{
+		\noindent \textbf{#1} \hfill \textbf{#2} \\
+		\textit{#3}	 \hfill	 \textit{ #4} 	
+		\normalsize \par}
+		
 \newcommand{\WorkEntry}[4]{						
 		\noindent \textbf{#1} \hfill 					
 		\colorbox{Black}{\color{White}#2} \par		
@@ -63,12 +65,17 @@ Indian Institue of Technology, Kanpur
 \end{flushright}
 \sepspace
 \NewPart{Education}{}
-
-\EducationEntry{B.Tech Computer Sciences}{2013-}{Indian Institute of Technology $ $ \centering{grade 8.0/10.0}}
-
+\EducationEntry{B.Tech Computer Sciences}{2013-}{Indian Institute of Technology, Kanpur}{\emph{performance : 8.0/10.0}}
+\sepspace
+\EducationEntry{Intermediate}{2011-2013}{Sri Chaitanya Narayana Group, Hyderabad}{\b{\emph{performance : 96.9/100}}}
+\sepspace
+\EducationEntry{High School}{2000-2011}{Sri Chaitanya Group, Hyderabad}{\b{\emph{performance : 94.3/100}}}
 \sepspace
 
-\EducationEntry{Intermediate}{2011-2013}{Sri Chaitanya Narayana Group $ $ \centering{grade 96.9/100}}
-
+\NewPart{Scholastic Acheivements}{}
+\ScholasticAcheivements{AIR 121}{Gold Medal}{IIT-JEE, 2013}{IGNOU-SAARC Olympiad, 2011}
 \sepspace
+\ScholasticAcheivements{KVPY Scholar}{Aditya Birla Scholarship}{Placed 37th in CML, 2011}{Nominated in 2013}
+\sepspace
+
 \end{document}
