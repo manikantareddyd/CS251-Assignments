@@ -1,8 +1,9 @@
 \documentclass{article}
 \usepackage{amsmath,amsfonts,amsthm,graphicx,geometry,url,wrapfig}
-
+\usepackage{array}
 \usepackage{sectsty}							
 \usepackage[svgnames]{xcolor}
+\usepackage{multirow} 
 \sectionfont{									
 	\usefont{OT1}{phv}{b}{n}%					
 	\sectionrule{0pt}{0pt}{-5pt}{3pt}
@@ -14,18 +15,8 @@
 \newcommand{\MyName}[1]{
 		\huge \usefont{OT1}{phv}{b}{n} \hfill #1 		
 		\par \normalsize \normalfont}
-		
-\newcommand{\MySlogan}[1]{
-		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1} 
-		\par \normalsize \normalfont}
 
 \newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
-
-\newcommand{\PersonalEntry}[2]{
-		\noindent\hangindent=2em\hangafter=0 		
-		\parbox{\spacebox}{						
-		\textit{#1}}								
-		\hspace{1.5em} #2 \par}					
 
 \newcommand{\SkillsEntry}[2]{						
 		\noindent\hangindent=2em\hangafter=0 		
@@ -50,7 +41,9 @@
 		\noindent \textit{#3} \par					
 		\noindent\hangindent=2em\hangafter=0 \small #4 	
 		\normalsize \par}
-		
+\newcommand{\transcriptentry}[6]{
+	\tiny{#1} & \tiny{#2} & \tiny{#3} & \tiny{#4} & \tiny{#5} & \tiny{#6} \\ 
+}		
 \begin{document}
 \begin{wrapfigure}{l}{0.5\textwidth}
 	\vspace*{-2em}
@@ -63,9 +56,10 @@ $2^{nd}$ year undergraduate\\
 Dept. of Computer Sciences\\
 Indian Institue of Technology, Kanpur
 \end{flushright}
+
 \sepspace
 \NewPart{Education}{}
-\EducationEntry{B.Tech Computer Sciences}{2013-}{Indian Institute of Technology, Kanpur}{\emph{performance : 8.0/10.0}}
+\EducationEntry{B.Tech, Computer Sciences}{2013-}{Indian Institute of Technology, Kanpur}{\emph{performance : 8.0/10.0}}
 \sepspace
 \EducationEntry{Intermediate}{2011-2013}{Sri Chaitanya Narayana Group, Hyderabad}{\b{\emph{performance : 96.9/100}}}
 \sepspace
@@ -77,5 +71,18 @@ Indian Institue of Technology, Kanpur
 \sepspace
 \ScholasticAcheivements{KVPY Scholar}{Aditya Birla Scholarship}{Placed 37th in CML, 2011}{Nominated in 2013}
 \sepspace
+
+
+\begin{center}
+
+\begin{tabular}{| m{5em} | m{2cm} m{3cm} m{1cm} m{1cm} m{1cm} m{1cm} |} 
+\small{YEAR/SEM} & \small{COURSE\,NO} & \small{TITLE} & \small{UNIT} & \small{GRADE} & \small{SPI} & \small{CPI} \\
+\hline
+\multirow{7}{5em}{\small{2013-2014 FIRST}}
+	& \tiny{CHM101A} & \tiny{CHEMISTRY\,LABORATORY} & \tiny{3} & \tiny{A} & & \\
+	& \transcriptentry{ESC101A}{FUNDAMENTALS\,OF COMPUTING}{14}{B}{}{} \\
+\end{tabular}
+
+\end{center}
 
 \end{document}
