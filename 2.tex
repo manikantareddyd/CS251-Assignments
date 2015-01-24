@@ -1,7 +1,7 @@
 \documentclass[2pt]{article}
 \usepackage{amsmath,amsthm,amssymb,geometry,graphicx,wrapfig,commath}
 \usepackage[font={small,it}]{caption}
-\title{Harmonic Number}
+\title{\textbf{Harmonic Number}}
 
 \begin{document}
 \date{\vspace{-5ex}}
@@ -55,11 +55,11 @@ An integral representation is given by
 \begin{equation}
 H_{n} = \int_{0}^{1} \frac{1-x^n}{1-x} dx \label{Euler equation}\nonumber
 \end{equation}
-The equakity above is obvious by simple algebraic identiy
+The equality above is obvious by simple algebraic identity
 \begin{equation}
 \frac{1-x^n}{1-x} = 1+x+...+x^{n-1}\nonumber
 \end{equation}
-Using a simple integral transform ${x = 1-u}$, an elegant combinatorial expression for $H_{n}$ is
+Using a simple integral transform ${x = 1-u}$, an elegant combinatorial expression for $H_{n}$ is\\
 \begin{align}
 H_{n} &= \int_{0}^{1} \frac{1-x^n}{1-x} dx\nonumber \\
 	 &= -\int_{1}^{0} \frac{1-{(1-u)}^n}{u} dx \nonumber \\
@@ -68,7 +68,7 @@ H_{n} &= \int_{0}^{1} \frac{1-x^n}{1-x} dx\nonumber \\
 	 &= \sum_{k=1}^{n} (-1)^{k-1} {n \choose k} \int_{0}^{1} u^{k-1} \nonumber dx\\
 	 &= \sum_{k=1}^{n} (-1)^{k-1} \frac{1}{k} {n \choose k} \nonumber
 \end{align}
-The same repreentation can b produced by using the third \emph{Retkes Identity} by setting $x_{1} = 1, . . . , x_{n} = n$ and using the fact that
+The same representation can be produced by using the third \emph{Retkes Identity} by setting $x_{1} = 1, . . . , x_{n} = n$ and using the fact that
 \begin{equation}
 {\Pi}_{k}(1, . . . , n) = {(-1)}^{n-k} (k-1)!(n-k)! \nonumber
 \end{equation}
