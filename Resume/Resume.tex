@@ -8,11 +8,11 @@
 \usepackage{arydshln}
 
 \sectionfont{									
-		\usefont{OT1}{phv}{b}{n}%					
-		\sectionrule{0pt}{0pt}{-3pt}{3pt}
+		\large \usefont{OT1}{phv}{b}{s}%					
+		\sectionrule{0pt}{0pt}{-4pt}{3pt}
 		}
 
-\newcommand{\sepspace}{\vspace*{1em}}		
+\newcommand{\sepspace}{\vspace*{0.8em}}		
 
 \newcommand{\MyName}[1]{
 		\huge \usefont{OT1}{phv}{b}{n} \hfill #1 		
@@ -21,18 +21,12 @@
 
 \newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
 
-\newcommand{\SkillsEntry}[2]{						
-		\noindent\hangindent=2em\hangafter=0 		
-		\parbox{\spacebox}{						
-		\textit{#1}}								
-		\hspace{1.5em} #2 \par
-		}					
+\newcommand{\SkillsEntry}[3]{#1 & #2 & #3\\}					
 		
 \newcommand{\EducationEntry}[4]{
 		\noindent \textbf{#1} \hfill 	{#2} \par				
-		\noindent \textit{#3} \par	
-		\noindent #4 	
-		\normalsize \par
+		\noindent #3 \hfill	
+		Grade : \textbf{#4} 	
 		}
 		
 \newcommand{\ScholasticAcheivements}[4]{
@@ -41,12 +35,10 @@
 		\normalsize \par
 		}
 		
-\newcommand{\WorkEntry}[4]{						
+\newcommand{\WorkEntry}[3]{						
 		\noindent \textbf{#1} \hfill 					
-		\colorbox{Black}{\color{White}#2} \par		
-		\noindent \textit{#3} \par					
-		\noindent\hangindent=2em\hangafter=0 \small #4 	
-		\normalsize \par
+		(#2) \par		
+		\noindent #3 \par					
 		}
 
 \newcommand{\transcriptentry}[6]{
@@ -56,7 +48,7 @@
 %------------------------------------------mera photo................................................................%
 \begin{document}
 \begin{wrapfigure}{l}{0.5\textwidth}
-	\vspace*{-2em}
+	\vspace*{-3em}
 		\includegraphics[width=0.25\textwidth]{photo.jpg}
 \end{wrapfigure}
 %................................................end..................................................................%
@@ -75,17 +67,16 @@
 %..........................................EDU INFO....................................................................%
 \NewPart{Education}{}
 
-\EducationEntry{B.Tech, Computer Sciences}{2013-}{Indian Institute of Technology, Kanpur}{\emph{performance : 8.0/10.0}}
+\EducationEntry{B.Tech, Computer Sciences}{2013-}{Indian Institute of Technology, Kanpur}{8.0/10.0}
 
 \sepspace
 
-\EducationEntry{Intermediate}{2011-2013}{Sri Chaitanya Narayana Group, Hyderabad}{\b{\emph{performance : 96.9/100}}}
+\EducationEntry{Intermediate}{2011-2013}{Sri Chaitanya Narayana Group, Hyderabad}{96.9/100}
 
 \sepspace
 
-\EducationEntry{High School}{2000-2011}{Sri Chaitanya Group, Hyderabad}{\b{\emph{performance : 94.3/100}}}
+\EducationEntry{High School}{2000-2011}{Sri Chaitanya Group, Hyderabad}{94.3/100}
 
-\sepspace
 %............................................end............................................................%
 
 %......................................ACH ZONE.............................................................%
@@ -96,9 +87,36 @@
 \sepspace
 
 \ScholasticAcheivements{KVPY Scholar}{Aditya Birla Scholarship}{Placed 37th in CML, 2011}{Nominated in 2013}
-
-\sepspace
 %.............................................end.......................................................%
+%................................................Skills.................................................%
+\NewPart{Skill Set}
+	\begin{tabular}{m{0.33\textwidth}  m{0.33\textwidth} m{0.33\textwidth}}
+		\SkillsEntry{\textbf{Programming}}{\textbf{Design}}{\textbf{Misc}}
+		\SkillsEntry{C}{Photoshop}{R}
+		\SkillsEntry{Python}{After Effects}{Weka}
+		\SkillsEntry{HTML}{Gimp}{OpenCV}
+		\SkillsEntry{CSS}{Blender}{bootstrap}
+		\SkillsEntry{js}{Openshot}{reveal.js}
+		\SkillsEntry{shell}{}{}
+	\end{tabular}
+%.................................................end....................................................%
+%.......................................Projects......................................................%
+\NewPart{Projects}
+
+\WorkEntry{Gesture\,Recognition}{May-Jul 2014}{$\bullet$ Developed an Application in C using \emph{OpenCV} capable of recognising gestures made by us.\\ $\bullet$ The video input was fed into the system which then characterised the motion of the hand into characteristic
+directions after passing various Gaussian filters and thereby used them to understand the gesture and
+hence execute a gesture.\\$\bullet$We then approched an other method of Gesture recognition using HSV color spaces and thresholdings}
+\sepspace
+
+\WorkEntry{Analysis of Gamma Ray Data from Markarian 421 and Crab}{Dec 2013}{$\bullet$This project involved Analysing Data from Gamma Ray Telescopes under Dr. K.K Yadav and Dr. R. C Rannot,
+at BARC, Mumbai.\\$\bullet$The processing of images, made available from various cherenkov detectors, involved developing algorithms
+for separating objects by identifying boundaries/ edges in the low resolutions images}
+\sepspace
+\WorkEntry{Carnival of Rust}{Aug-Nov\,2014}{$\bullet$A project by our Team was adjudged to be the Best Sectional Project in the course TA201\\$\bullet$The project involved modelling an \emph{amusement park} utilising many industrial processes varying from \emph{casting, welding, shearing,} etc.}
+
+%.............................................end........................................................%
+
+%..............................................POR
 
 %.......................................TRANSCRIPT ZONE.................................................%
 \begin{center}
