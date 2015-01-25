@@ -6,9 +6,9 @@
 \usepackage{multirow} 
 \usepackage{dashrule}
 \usepackage{arydshln}
-
+\usepackage[hidelinks]{hyperref}
 \sectionfont{									
-		\large \usefont{OT1}{phv}{b}{s}%					
+		\large \usefont{OT1}{phv}{b}{n}					
 		\sectionrule{0pt}{0pt}{-4pt}{3pt}
 		}
 
@@ -16,7 +16,7 @@
 
 \newcommand{\MyName}[1]{
 		\huge \usefont{OT1}{phv}{b}{n} \hfill #1 		
-		\par \normalsize \normalfont
+		\normalsize \normalfont
 		}
 
 \newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
@@ -42,16 +42,16 @@
 		}
 
 \newcommand{\transcriptentry}[6]{
-		\tiny{#1} & \tiny{#2} & \tiny{#3} & \tiny{#4} & \tiny{#5} & \tiny{#6} \\ 
+		\scriptsize{#1} & \scriptsize{#2} & \scriptsize{#3} & \scriptsize{#4} & \scriptsize{#5} & \scriptsize{#6} \\ 
 		}		
 
 \newcommand{\PORentry}[2]{\textbf{#1} \\ #2	\\
 		}
 %------------------------------------------mera photo................................................................%
 \begin{document}
-\begin{wrapfigure}{l}{0.5\textwidth}
+\begin{wrapfigure}{l}{0.4\textwidth}
 	\vspace*{-3em}
-		\includegraphics[width=0.25\textwidth]{photo.png}
+		\includegraphics[width=0.3\textwidth]{photo.png}
 \end{wrapfigure}
 %................................................end..................................................................%
 
@@ -60,7 +60,10 @@
 \begin{flushright}
 	$2^{nd}$ year undergraduate\\
 	Dept. of Computer Sciences\\
-	Indian Institue of Technology, Kanpur
+	Indian Institue of Technology, Kanpur\\
+	\url{www.cse.iitk.ac.in/users/manikant}\\
+	\url{mailto:manikant@cse.iitk.ac.in}\\
+	ph : 7753058439
 \end{flushright}
 %..............................................end......................................................................%
 
@@ -115,9 +118,7 @@ hence execute a gesture.\\$\bullet$We then approched an other method of Gesture 
 %.............................................end........................................................%
 %..............................................POR......................................................%
 \NewPart{Positions of Responsibility}
-\PORentry{Senator UG Y13, 2014-2015}{Over 800 students elected me to a body of 8 students in the Senate of Student Gymkhana. As a senator I’ve
-been nominated to various ad hoc committees of senate which strive to provide solutions for persisting
-problems.}
+\PORentry{Senator UG Y13, 2014-2015}{Over 800 students elected me to a body of 8 students in the Senate of Student Gymkhana. As a senator I’ve been nominated to various ad hoc committees of senate which strive to provide solutions for persisting problems.}
 \\
 \PORentry{Executive, Marketing, Antaragni}{Being in the team of Marketing Executives meant to be responsible for all the marketing, from inviting
 sponsors to maintaining their publicity throughout the festival. Working as an executive I got the opportunity
@@ -140,17 +141,17 @@ $\bullet$Second position in Planetarium Show making, Spectrum’14.\\
 %.......................................end.........................................................%
 %.......................................TRANSCRIPT ZONE.................................................%
 \begin{center}
-	\tiny{INDIAN INSTITUTE OF TECHNOLOGY}\\
-	\tiny{GRADE REPORT}\\
-	\tiny{ROLL NO : 13265} \hfill \tiny{DEPARTMENT : COMPUTER SC. \& ENGG.}\\
-	\tiny{NAME : DORNALA MANIKANTA REDDY} \hfill \tiny{PROGRAM : BACHELOR OF TECHNOLOGY}\\
+	\scriptsize{INDIAN INSTITUTE OF TECHNOLOGY}\\
+	\scriptsize{GRADE REPORT}\\
+	\scriptsize{ROLL NO : 13265} \hfill \scriptsize{DEPARTMENT : COMPUTER SC. \& ENGG.}\\
+	\scriptsize{NAME : DORNALA MANIKANTA REDDY} \hfill \scriptsize{PROGRAM : BACHELOR OF TECHNOLOGY}\\
 \end{center}
 \begin{center}
-	\begin{tabular}{m{5em}  m{1.5cm} m{5cm} m{0.5cm} m{0.7cm} m{0.3cm} m{0.5cm}} 
+	\begin{tabular}{m{4.1em}  m{1cm} m{6cm} m{0.5cm} m{0.85cm} m{0.2cm} m{0.2cm}} 
 	\hdashline
-	\tiny{\textbf{YEAR/SEM}} & \transcriptentry{\textbf{COURSE}}{\textbf{TITLE}}{\textbf{UNIT}}{\textbf{GRADE}}{\textbf{SPI}}{\textbf{CPI}}
+	\scriptsize{\textbf{YEAR/SEM}} & \transcriptentry{\textbf{COURSE}}{\textbf{TITLE}}{\textbf{UNIT}}{\textbf{GRADE}}{\textbf{SPI}}{\textbf{CPI}}
 	\hdashline
-	\multirow{7}{5em}{\tiny{2013-2014 FIRST}}
+	\multirow{7}{5em}{\scriptsize{2013-2014 FIRST}}
 		& \transcriptentry{CHM101A}{CHEMISTRY\,LABORATORY}{3}{A}{}{}
 		& \transcriptentry{ESC101A}{FUNDAMENTALS\,OF\,COMPUTING}{14}{B}{}{}
 		& \transcriptentry{MTH101A}{MATHEMATICS\,I}{11}{B}{}{}
@@ -159,7 +160,7 @@ $\bullet$Second position in Planetarium Show making, Spectrum’14.\\
 		& \transcriptentry{PSY151A}{INTRODUCTION\,TO\,PSYCHOLOGY}{11}{B}{}{}
 		& \transcriptentry{}{}{}{}{\small {7.7}}{\small{7.7}}
 		\\
-	\multirow{7}{5em}{\tiny{2013-2014 SECOND}}
+	\multirow{7}{5em}{\scriptsize{2013-2014 SECOND}}
 		& \transcriptentry{CHM102A}{GENERAL\,CHEMISTRY}{8}{B}{}{}
 		& \transcriptentry{LIF101A}{INTRODUCTION\,TO\,BIOLOGY}{6}{B}{}{}
 		& \transcriptentry{MTH102A}{MATHEMATICS\,II}{11}{B}{}{}
@@ -169,7 +170,7 @@ $\bullet$Second position in Planetarium Show making, Spectrum’14.\\
 		& \transcriptentry{TA101A}{ENGINEERING\,GRAPHICS}{9}{A}{}{}
 		& \transcriptentry{}{}{}{}{\small{8.8}}{\small{8.2}}
 		\\	
-	\multirow{7}{5em}{\tiny{2014-2015 FIRST}}
+	\multirow{7}{5em}{\scriptsize{2014-2015 FIRST}}
 		& \transcriptentry{COM200}{COMMUNICATIONS\,SKILLS:\,COMPOSITION}{5}{S}{}{}
 		& \transcriptentry{CS201A}{MATHEMATICS\,FOR\,COMPUTER\,SCIENCE-I}{9}{C}{}{}
 		& \transcriptentry{CS210A}{DATA\,STRUCTURES\,AND\,ALGORITHMS}{12}{B}{}{}
