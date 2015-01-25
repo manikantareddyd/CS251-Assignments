@@ -3,6 +3,6 @@
        title = "Math 105 notes",
        howpublished = "\url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/}",
 	 }
-@ONLINE{ wiki,
+@misc{ wiki,
        howpublished = "\url{http://en.wikipedia.org/wiki/Harmonic_number}"
 }
