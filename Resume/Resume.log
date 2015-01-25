@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.18)  25 JAN 2015 09:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.18)  25 JAN 2015 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -444,7 +444,7 @@ File: photo.png Graphic file (type png)
 
 <use photo.png>
 Package pdftex.def Info: photo.png used on input line 54.
-(pdftex.def)             Requested size: 129.00269pt x 129.00229pt.
+(pdftex.def)             Requested size: 107.50114pt x 107.49284pt.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
@@ -459,7 +459,25 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 61.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (31.70227pt too wide) in paragraph at lines 98--109
+Overfull \hbox (40.30421pt too wide) in paragraph at lines 64--68
+ []
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (31.70227pt too wide) in paragraph at lines 99--110
 [] 
  []
 
@@ -476,22 +494,22 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--134
+Underfull \hbox (badness 10000) in paragraph at lines 122--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--134
+Underfull \hbox (badness 10000) in paragraph at lines 122--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--134
+Underfull \hbox (badness 10000) in paragraph at lines 122--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--134
+Underfull \hbox (badness 10000) in paragraph at lines 122--135
 
  []
 
@@ -517,163 +535,163 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 [2]
-Overfull \hbox (9.15538pt too wide) in paragraph at lines 152--152
+Overfull \hbox (9.15538pt too wide) in paragraph at lines 153--153
 []|\OT1/cmr/bx/n/7 YEAR/SEM| 
  []
 
 
-Overfull \hbox (9.3972pt too wide) in paragraph at lines 152--152
+Overfull \hbox (9.3972pt too wide) in paragraph at lines 153--153
 []|\OT1/cmr/bx/n/7 COURSE| 
  []
 
 
-Overfull \hbox (9.31802pt too wide) in paragraph at lines 152--152
+Overfull \hbox (9.31802pt too wide) in paragraph at lines 153--153
 []|\OT1/cmr/bx/n/7 UNIT| 
  []
 
 
-Overfull \hbox (9.19687pt too wide) in paragraph at lines 152--152
+Overfull \hbox (9.19687pt too wide) in paragraph at lines 153--153
 []|\OT1/cmr/bx/n/7 GRADE| 
  []
 
 
-Overfull \hbox (8.84283pt too wide) in paragraph at lines 152--152
+Overfull \hbox (8.84283pt too wide) in paragraph at lines 153--153
 []|\OT1/cmr/bx/n/7 SPI| 
  []
 
 
-Overfull \hbox (10.3345pt too wide) in paragraph at lines 152--153
+Overfull \hbox (10.3345pt too wide) in paragraph at lines 153--154
 []|\OT1/cmr/bx/n/7 CPI| 
  []
 
 
-Overfull \hbox (8.99995pt too wide) in paragraph at lines 154--155
+Overfull \hbox (8.99995pt too wide) in paragraph at lines 155--156
 []|[]| 
  []
 
 
-Overfull \hbox (8.21413pt too wide) in paragraph at lines 155--155
+Overfull \hbox (8.21413pt too wide) in paragraph at lines 156--156
 []|\OT1/cmr/m/n/7 CHM101A| 
  []
 
 
-Overfull \hbox (4.90852pt too wide) in paragraph at lines 156--156
+Overfull \hbox (4.90852pt too wide) in paragraph at lines 157--157
 []|\OT1/cmr/m/n/7 ESC101A| 
  []
 
 
-Overfull \hbox (8.21413pt too wide) in paragraph at lines 157--157
+Overfull \hbox (8.21413pt too wide) in paragraph at lines 158--158
 []|\OT1/cmr/m/n/7 MTH101A| 
  []
 
 
-Overfull \hbox (6.58911pt too wide) in paragraph at lines 159--159
+Overfull \hbox (6.58911pt too wide) in paragraph at lines 160--160
 []|\OT1/cmr/m/n/7 PHY103A| 
  []
 
 
-Overfull \hbox (5.10298pt too wide) in paragraph at lines 160--160
+Overfull \hbox (5.10298pt too wide) in paragraph at lines 161--161
 []|\OT1/cmr/m/n/7 PSY151A| 
  []
 
 
-Overfull \hbox (6.1289pt too wide) in paragraph at lines 161--161
+Overfull \hbox (6.1289pt too wide) in paragraph at lines 162--162
 []|\OT1/cmr/m/n/9 7.7| 
  []
 
 
-Overfull \hbox (6.1289pt too wide) in paragraph at lines 161--162
+Overfull \hbox (6.1289pt too wide) in paragraph at lines 162--163
 []|\OT1/cmr/m/n/9 7.7| 
  []
 
 
-Overfull \hbox (8.99995pt too wide) in paragraph at lines 163--164
+Overfull \hbox (8.99995pt too wide) in paragraph at lines 164--165
 []|[]| 
  []
 
 
-Overfull \hbox (8.21413pt too wide) in paragraph at lines 164--164
+Overfull \hbox (8.21413pt too wide) in paragraph at lines 165--165
 []|\OT1/cmr/m/n/7 CHM102A| 
  []
 
 
-Overfull \hbox (2.40158pt too wide) in paragraph at lines 165--165
+Overfull \hbox (2.40158pt too wide) in paragraph at lines 166--166
 []|\OT1/cmr/m/n/7 LIF101A| 
  []
 
 
-Overfull \hbox (8.21413pt too wide) in paragraph at lines 166--166
+Overfull \hbox (8.21413pt too wide) in paragraph at lines 167--167
 []|\OT1/cmr/m/n/7 MTH102A| 
  []
 
 
-Overfull \hbox (6.58911pt too wide) in paragraph at lines 168--168
+Overfull \hbox (6.58911pt too wide) in paragraph at lines 169--169
 []|\OT1/cmr/m/n/7 PHY101A| 
  []
 
 
-Overfull \hbox (6.58911pt too wide) in paragraph at lines 169--169
+Overfull \hbox (6.58911pt too wide) in paragraph at lines 170--170
 []|\OT1/cmr/m/n/7 PHY102A| 
  []
 
 
-Overfull \hbox (6.1289pt too wide) in paragraph at lines 171--171
+Overfull \hbox (6.1289pt too wide) in paragraph at lines 172--172
 []|\OT1/cmr/m/n/9 8.8| 
  []
 
 
-Overfull \hbox (6.1289pt too wide) in paragraph at lines 171--172
+Overfull \hbox (6.1289pt too wide) in paragraph at lines 172--173
 []|\OT1/cmr/m/n/9 8.2| 
  []
 
 
-Overfull \hbox (8.99995pt too wide) in paragraph at lines 173--174
+Overfull \hbox (8.99995pt too wide) in paragraph at lines 174--175
 []|[]| 
  []
 
 
-Overfull \hbox (2.54741pt too wide) in paragraph at lines 174--174
+Overfull \hbox (2.54741pt too wide) in paragraph at lines 175--175
 []|\OT1/cmr/m/n/7 COM200| 
  []
 
 
-Overfull \hbox (4.90852pt too wide) in paragraph at lines 177--177
+Overfull \hbox (4.90852pt too wide) in paragraph at lines 178--178
 []|\OT1/cmr/m/n/7 ESC201A| 
  []
 
 
-Overfull \hbox (3.1863pt too wide) in paragraph at lines 178--178
+Overfull \hbox (3.1863pt too wide) in paragraph at lines 179--179
 []|\OT1/cmr/m/n/7 ES0202A| 
  []
 
 
-Overfull \hbox (6.1289pt too wide) in paragraph at lines 180--180
+Overfull \hbox (6.1289pt too wide) in paragraph at lines 181--181
 []|\OT1/cmr/m/n/9 7.7| 
  []
 
 
-Overfull \hbox (6.1289pt too wide) in paragraph at lines 180--180
+Overfull \hbox (6.1289pt too wide) in paragraph at lines 181--181
 []|\OT1/cmr/m/n/9 8.0| 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
 [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
  (./Resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `Resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
  ) 
 Here is how much of TeX's memory you used:
- 7326 strings out of 494985
- 104986 string characters out of 6180356
+ 7345 strings out of 494985
+ 105171 string characters out of 6180356
  224655 words of memory out of 5000000
- 10430 multiletter control sequences out of 15000+600000
- 11783 words of font info for 36 fonts, out of 8000000 for 9000
+ 10442 multiletter control sequences out of 15000+600000
+ 14883 words of font info for 48 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 29i,12n,35p,438b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,13n,35p,438b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/
@@ -682,9 +700,9 @@ ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on Resume.pdf (3 pages, 154519 bytes).
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on Resume.pdf (3 pages, 147940 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
