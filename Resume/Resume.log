@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.18)  25 JAN 2015 12:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.18)  25 JAN 2015 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -434,19 +434,18 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 51.
 LaTeX Info: Redefining \pageref on input line 51.
 LaTeX Info: Redefining \nameref on input line 51.
-
-(./Resume.out) (./Resume.out)
 \@outlinefile=\write3
 \openout3 = `Resume.out'.
 
- <photo.png, id=4, 712.6625pt x 712.6625pt>
-File: photo.png Graphic file (type png)
 
-<use photo.png>
+<photo.png, id=4, 712.6625pt x 712.6625pt>
+File: photo.png Graphic file (type png)
+ <use photo.png>
 Package pdftex.def Info: photo.png used on input line 54.
 (pdftex.def)             Requested size: 107.50114pt x 107.49284pt.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 59.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 61.
@@ -667,13 +666,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
  (./Resume.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
-Package rerunfilecheck Info: File `Resume.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package rerunfilecheck Warning: File `Resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Resume.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 7345 strings out of 494985
- 105171 string characters out of 6180356
+ 7341 strings out of 494985
+ 105127 string characters out of 6180356
  224655 words of memory out of 5000000
  10442 multiletter control sequences out of 15000+600000
  14883 words of font info for 48 fonts, out of 8000000 for 9000
