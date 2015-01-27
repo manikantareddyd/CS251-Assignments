@@ -1,0 +1,186 @@
+\documentclass{article}
+\usepackage{amsmath,amsfonts,amsthm,graphicx,geometry,url,wrapfig}
+\usepackage{array}
+\usepackage{sectsty}							
+\usepackage[svgnames]{xcolor}
+\usepackage{multirow} 
+\usepackage{dashrule}
+\usepackage{arydshln}
+\usepackage[hidelinks]{hyperref}
+\sectionfont{									
+		\large \usefont{OT1}{phv}{b}{n}					
+		\sectionrule{0pt}{0pt}{-4pt}{3pt}
+		}
+
+\newcommand{\sepspace}{\vspace*{0.8em}}		
+
+\newcommand{\MyName}[1]{
+		\huge \usefont{OT1}{phv}{b}{n} \hfill #1 		
+		\normalsize \normalfont
+		}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\SkillsEntry}[3]{#1 & #2 & #3\\}					
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill 	{#2} \par				
+		\noindent #3 \hfill	
+		Grade : \textbf{#4} 	
+		}
+		
+\newcommand{\ScholasticAcheivements}[4]{
+		\noindent \textbf{#1} \hfill \textbf{#2} \\
+		\textit{#3}	 \hfill	 \textit{ #4} 	
+		\normalsize \par
+		}
+		
+\newcommand{\WorkEntry}[3]{						
+		\noindent \textbf{#1} \hfill 					
+		(#2) \par		
+		\noindent #3 \par					
+		}
+
+\newcommand{\transcriptentry}[6]{
+		\scriptsize{#1} & \scriptsize{#2} & \scriptsize{#3} & \scriptsize{#4} & \scriptsize{#5} & \scriptsize{#6} \\ 
+		}		
+
+\newcommand{\PORentry}[2]{\textbf{#1} \\ #2	\\
+		}
+%------------------------------------------mera photo................................................................%
+\begin{document}
+\begin{wrapfigure}{l}{0.3\textwidth}
+	\vspace*{-3em}
+		\includegraphics[width=0.25\textwidth]{photo.png}
+\end{wrapfigure}
+%................................................end..................................................................%
+
+%..............................................Personal Details.........................................................%
+\MyName{Manikanta Reddy D}
+\begin{flushright}
+	$2^{nd}$ year undergraduate\\
+	Dept. of Computer Sciences\\
+	Indian Institue of Technology, Kanpur\\
+	ph : 7753058439
+	\begin{tabular}{m{0.35\textwidth}  m{0.33\textwidth} m{0.33\textwidth}}
+	\SkillsEntry{}{\footnotesize{\url{www.cse.iitk.ac.in/users/manikant}}}{\href{mailto:manikant@cse.iitk.ac.in}{\footnotesize{\url{manikant@cse.iitk.ac.in}}}}
+	\end{tabular}
+\end{flushright}
+%..............................................end......................................................................%
+
+
+%..........................................EDU INFO....................................................................%
+\NewPart{Education}{}
+
+\EducationEntry{B.Tech, Computer Sciences}{2013-}{Indian Institute of Technology, Kanpur}{8.0/10.0}
+
+\sepspace
+
+\EducationEntry{Intermediate}{2011-2013}{Sri Chaitanya Narayana Group, Hyderabad}{96.9/100}
+
+\sepspace
+
+\EducationEntry{High School}{2000-2011}{Sri Chaitanya Group, Hyderabad}{94.3/100}
+
+%............................................end............................................................%
+
+%......................................ACH ZONE.............................................................%
+\NewPart{Scholastic Acheivements}{}
+
+\ScholasticAcheivements{AIR 121}{Gold Medal}{IIT-JEE, 2013}{IGNOU-SAARC Olympiad, 2011}
+
+\sepspace
+
+\ScholasticAcheivements{KVPY Scholar}{Aditya Birla Scholarship}{Placed 37th in CML, 2011}{Nominated in 2013}
+%.............................................end.......................................................%
+%................................................Skills.................................................%
+\NewPart{Skill Set}
+	\begin{tabular}{m{0.33\textwidth}  m{0.33\textwidth} m{0.33\textwidth}}
+		\SkillsEntry{\textbf{Programming}}{\textbf{Design}}{\textbf{Misc}}
+		\SkillsEntry{C}{Photoshop}{R}
+		\SkillsEntry{Python}{After Effects}{Weka}
+		\SkillsEntry{HTML}{Gimp}{OpenCV}
+		\SkillsEntry{CSS}{Blender}{bootstrap}
+		\SkillsEntry{js}{Openshot}{reveal.js}
+		\SkillsEntry{shell}{}{}
+	\end{tabular}
+%.................................................end....................................................%
+%.......................................Projects......................................................%
+\NewPart{Projects}
+\WorkEntry{Analysis of Gamma Ray Data from Markarian 421 and Crab}{Dec 2013}{$\bullet$This project involved Analysing Data from Gamma Ray Telescopes under Dr. K.K Yadav and Dr. R. C Rannot, at BARC, Mumbai.\\$\bullet$The processing of images, made available from various cherenkov detectors, involved developing algorithms for separating objects by identifying boundaries/ edges in the low resolutions images}
+\pagebreak
+\WorkEntry{Gesture\,Recognition}{May-Jul 2014}{$\bullet$ Developed an Application in C using \emph{OpenCV} capable of recognising gestures made by us.\\ $\bullet$ The video input was fed into the system which then characterised the motion of the hand into characteristic
+directions after passing various Gaussian filters and thereby used them to understand the gesture and
+hence execute a gesture.\\$\bullet$We then approched an other method of Gesture recognition using HSV color spaces and thresholdings}
+\sepspace
+\WorkEntry{Carnival of Rust}{Aug-Nov\,2014}{$\bullet$A project by our Team was adjudged to be the Best Sectional Project in the course TA201\\$\bullet$The project involved modelling an \emph{amusement park} utilising many industrial processes varying from \emph{casting, welding, shearing,} etc.}
+\sepspace
+%.............................................end........................................................%
+%..............................................POR......................................................%
+\NewPart{Positions of Responsibility}
+\PORentry{Senator UG Y13, 2014-2015}{Over 800 students elected me to a body of 8 students in the Senate of Student Gymkhana. As a senator I’ve been nominated to various ad hoc committees of senate which strive to provide solutions for persisting problems.}
+\\
+\PORentry{Executive, Marketing, Antaragni}{Being in the team of Marketing Executives meant to be responsible for all the marketing, from inviting
+sponsors to maintaining their publicity throughout the festival. Working as an executive I got the opportunity
+to enhance several of my values and skills.}
+\\
+\PORentry{Student Guide, Counselling Service, IIT Kanpur}{The counselling service screens a few individuals to aid a group of six freshmen into the campus and to mentor them periodically, so that they have a smooth transition while adjusting to new life of IIT Kanpur.}
+\\
+\PORentry{Secretary, Astronomy Club, IIT Kanpur}{I made a website for the flagship event of the club Eyes on the Skies which had over 3400 views.
+I was in the team of a select few, involved in building India’s first Student Built and Student run Observatory
+at IIT Kanpur. I’m currently building the club s website}
+%...........................................end..........................................................
+%...........................................Acheivements...............................................%
+\NewPart{Extra Curricular Acheivements}
+$\bullet$First position in Astronomy Quiz, thrice, held during Takneek’13, Techkriti’14 and Takneek’14.\\
+$\bullet$First position in Star Hunt, Techkriti’14.\\
+$\bullet$First position in Environmental Case Study, Green Opus’ 14.\\
+$\bullet$Second position in Whats Up, Techkriti’ 14.\\
+$\bullet$Second position in Planetarium Show making, Spectrum’14.\\
+\pagebreak
+%.......................................end.........................................................%
+%.......................................TRANSCRIPT ZONE.................................................%
+\begin{center}
+	\scriptsize{INDIAN INSTITUTE OF TECHNOLOGY}\\
+	\scriptsize{GRADE REPORT}\\
+	\scriptsize{ROLL NO : 13265} \hfill \scriptsize{DEPARTMENT : COMPUTER SC. \& ENGG.}\\
+	\scriptsize{NAME : DORNALA MANIKANTA REDDY} \hfill \scriptsize{PROGRAM : BACHELOR OF TECHNOLOGY}\\
+\end{center}
+\begin{center}
+	\begin{tabular}{m{4.1em}  m{1cm} m{6cm} m{0.5cm} m{0.85cm} m{0.2cm} m{0.2cm}} 
+	\hdashline
+	\scriptsize{\textbf{YEAR/SEM}} & \transcriptentry{\textbf{COURSE}}{\textbf{TITLE}}{\textbf{UNIT}}{\textbf{GRADE}}{\textbf{SPI}}{\textbf{CPI}}
+	\hdashline
+	\multirow{7}{5em}{\scriptsize{2013-2014 FIRST}}
+		& \transcriptentry{CHM101A}{CHEMISTRY\,LABORATORY}{3}{A}{}{}
+		& \transcriptentry{ESC101A}{FUNDAMENTALS\,OF\,COMPUTING}{14}{B}{}{}
+		& \transcriptentry{MTH101A}{MATHEMATICS\,I}{11}{B}{}{}
+		& \transcriptentry{PE101A}{MORNING\,EXERCISE}{3}{S}{}{}
+		& \transcriptentry{PHY103A}{PHYSICS\,II}{11}{C}{}{}
+		& \transcriptentry{PSY151A}{INTRODUCTION\,TO\,PSYCHOLOGY}{11}{B}{}{}
+		& \transcriptentry{}{}{}{}{\small {7.7}}{\small{7.7}}
+		\\
+	\multirow{7}{5em}{\scriptsize{2013-2014 SECOND}}
+		& \transcriptentry{CHM102A}{GENERAL\,CHEMISTRY}{8}{B}{}{}
+		& \transcriptentry{LIF101A}{INTRODUCTION\,TO\,BIOLOGY}{6}{B}{}{}
+		& \transcriptentry{MTH102A}{MATHEMATICS\,II}{11}{B}{}{}
+		& \transcriptentry{PE102A}{EVENING\,EXERCISE}{3}{S}{}{}
+		& \transcriptentry{PHY101A}{PHYSICS\,LABORATORY}{3}{B}{}{}
+		& \transcriptentry{PHY102A}{PHYSICS\,I}{11}{A}{}{}
+		& \transcriptentry{TA101A}{ENGINEERING\,GRAPHICS}{9}{A}{}{}
+		& \transcriptentry{}{}{}{}{\small{8.8}}{\small{8.2}}
+		\\	
+	\multirow{7}{5em}{\scriptsize{2014-2015 FIRST}}
+		& \transcriptentry{COM200}{COMMUNICATIONS\,SKILLS:\,COMPOSITION}{5}{S}{}{}
+		& \transcriptentry{CS201A}{MATHEMATICS\,FOR\,COMPUTER\,SCIENCE-I}{9}{C}{}{}
+		& \transcriptentry{CS210A}{DATA\,STRUCTURES\,AND\,ALGORITHMS}{12}{B}{}{}
+		& \transcriptentry{ESC201A}{INTRODUCTION\,TO\,ELECTRONICS}{14}{B}{}{}
+		& \transcriptentry{ES0202A}{MECHANICS\,OF\,SOLIDS}{11}{B}{}{}
+		& \transcriptentry{TA201A}{MANUFACTURING\,PROCESSES\,I}{6}{B}{}{}
+		& \transcriptentry{}{}{}{}{\small{7.7}}{\small{8.0}}\\
+	\hdashline
+	\end{tabular}
+\end{center}
+%........................................end................................................................%
+
+\end{document}
