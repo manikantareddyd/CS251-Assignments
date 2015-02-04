@@ -1,0 +1,4 @@
+Compile using
+$ pandoc filename -f markdown -t html -o index.html
+
+Webpage address http://manikanta.bitbucket.org
