@@ -7,15 +7,37 @@ HN=Harmonic\ Number
 R=Resume
 H_N=Harmonic_Number
 
-all: pdf dvi clean
 
-pdf:
+all: pdf dvi
+
+
+###################################PDF BUILD###################################
+pdf: pdf-HN pdf-R
+
+pdf-HN:
 	cd $(HN) && $(PDF) $(H_N).tex && $(BIB) $(H_N).aux && $(PDF) $(H_N).tex
-	cd $(R) && $(PDF) $(R).tex
+	make clean
 
-dvi:
+pdf-R:
+	cd $(R) && $(PDF) $(R).tex
+	make clean
+#################################################################################
+
+
+
+
+#####################################DVI BUILD###################################
+dvi: dvi-HN dvi-R
+	
+dvi-HN:
 	cd $(HN) && $(DVI) $(H_N).tex && $(BIB) $(H_N).aux && $(DVI) $(H_N).tex
+	make clean
+
+dvi-R:
 	cd $(R) && $(DVI) $(R).tex
+	make clean
+#################################################################################
+
 
 clean:
 	cd $(HN) && rm -rf $(RF)
