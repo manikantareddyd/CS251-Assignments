@@ -1,2 +1,8 @@
+
 Run time as ./time to display a banner of time.
 Note : This program depends on 'banner'. If you haven't installed it yet, do it so by typing 'sudo apt-get install sysbanner'
+
+The second part of assignment takes 'input' as input
+run the awk script as
+
+awk -f awkscript.awk < input
