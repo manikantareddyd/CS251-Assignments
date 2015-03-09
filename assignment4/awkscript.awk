@@ -12,6 +12,6 @@ BEGIN { total= 0; FS="|" }
       sq3 += ($5 * $5);
       sq += (sum * sum);
       }
-END   { print "Average|       |   ",(total1/NR),"|   ",(total2/NR),"|   ",(total3/NR),"|",(total/NR)}
-END		{ print "SD |       |   ",sqrt(sq1/NR),"|",sqrt(sq2/NR),"|",sqrt(sq3/NR),"|",sqrt(sq/NR)}
+END   { print "Average| |   ",(total1/NR),"|   ",(total2/NR),"|   ",(total3/NR),"|",(total/NR)}
+END		{ print "SD| |   ",sqrt(sq1/NR),"|   ",sqrt(sq2/NR),"|   ",sqrt(sq3/NR),"|",sqrt(sq/NR)}
 
