@@ -1,8 +1,10 @@
 a=0
 while [ $a -lt 1 ]
 do
-	clear
 	t=`date +%T`
 	banner $t
 	sleep 1
+	echo -e "\033[9A"
+	echo -e "\033[K\n\033[K\n\033[K\n\033[K\n\033[K\n\033[K\n\033[K\n\033[K"
+	echo -e "\033[9A"
 done
