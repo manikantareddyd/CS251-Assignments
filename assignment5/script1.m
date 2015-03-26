@@ -1,0 +1,11 @@
+a=1:50
+a=a'
+fb=fopen('fb','w')
+fg=fopen('fg','w')
+fp=fopen('fp','w')
+b=binopdf(a,50,0.3)
+g=lognpdf(a,15,10.5^0.5)
+p=poisspdf(a,15)
+fprintf(fb,"%.10f\n",b)
+fprintf(fg,"%.10f\n",g)
+fprintf(fp,"%.10f\n",p)
