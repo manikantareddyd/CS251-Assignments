@@ -5,7 +5,7 @@ fprintf(Bp,"%d\n",B);
 
 B=binornd(50,0.3,100000,1);
 Bp=fopen('B105','w');
-fprintf(Bp"%d\n",B);
+fprintf(Bp,"%d\n",B);
 
 B=binornd(50,0.3,10000,1);
 Bp=fopen('B104','w');
@@ -21,7 +21,7 @@ fprintf(Bp,"%d\n",B);
 
 G=normrnd(15,10.5^0.5,100000,1);
 Bp=fopen('G105','w');
-fprintf(Bp"%d\n",B);
+fprintf(Bp,"%d\n",B);
 
 G=normrnd(15,10.5^0.5,10000,1);
 Bp=fopen('G104','w');
@@ -37,7 +37,7 @@ fprintf(Bp,"%d\n",B);
 
 P=poissrnd(15,100000,1);
 Bp=fopen('P105','w');
-fprintf(Bp"%d\n",B);
+fprintf(Bp,"%d\n",B);
 
 P=poissrnd(15,10000,1);
 Bp=fopen('P104','w');
