@@ -2,7 +2,8 @@
 bin(x)=0.1*floor(x/0.1)
 set xrange [0:50]
 
-
+set xlabel 'x'
+set ylabel 'P(X=x)'
 
 plot "B106" using (bin($1)):(1.0) smooth frequency with boxes
 set output "histogramB106.png"
