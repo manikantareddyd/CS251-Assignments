@@ -11,7 +11,7 @@
 	fill=blue!20, 
 	text width=5em, 
 	text badly centered, 
-	node distance=3cm, 
+	node distance=4cm, 
 	inner sep=0pt
 	]
 \tikzstyle{block} = [
@@ -31,12 +31,12 @@
 	draw, 
 	ellipse,
 	fill=red!20, 
-	node distance=3cm,
+	node distance=4cm,
     minimum height=2em
     ]
 
-\resizebox{8cm}{18cm}{
-	\begin{tikzpicture}[node distance=2cm][scale=0.50]
+\resizebox{!}{20cm}{
+	\begin{tikzpicture}[node distance=3cm][scale=0.50]
 	    % Place nodes
 	    \node [block] (init) {
 	    	Pre Registration
@@ -50,13 +50,13 @@
 	    \node [decision, below of=The phase of unknown] (Result of instructors decision) {
 	    	Accepted into desired courses!
 	    	};
-	    \node [block, below of=Result of instructors decision, node distance=3cm] (Now Register) {
+	    \node [block, below of=Result of instructors decision, node distance=4cm] (Now Register) {
 	    	Now fill the registeration form , submit it to DUGC and wait for his approval
 	    	};
 	    \node [decision, below of=Now Register] (whims of DUGC) {
 	    	Did the DUGC approve?
 	    	};
-	    \node [block, below of=whims of DUGC, node distance=3cm] (khushi manao) {
+	    \node [block, below of=whims of DUGC, node distance=4cm] (khushi manao) {
 	    	Yay, you got all the courses you wanted to do :)
 	    	};
 	    \node [block, below of = khushi manao] (courses begin) {
@@ -65,8 +65,36 @@
 	    \node [decision, below of = courses begin] (The decision period){
 	    	Do you enjoy the course?
 	    	};
-	    \node [block, below of = The decision period,node distance=3cm] (Be Happy) {
-	    	Do the course for rest of the sem and be happy :P
+	    \node [block, below of = The decision period,node distance=4cm] (Be Happy) {
+	    	Be contended and Do the course for rest of the sem :P
+	    	};
+	    
+
+	    \node [decision, right of= The phase of unknown, node distance = 8cm] (ab bhi nahi mila) {
+	    	Is this is third time trying for same course
+	    	};
+	  	\node [block, below of = ab bhi nahi mila, node distance=4cm] (Try again) {
+	    	No problem go talk to the prof and request course again
+	    	};
+	    \node [block, right of = ab bhi nahi mila, node distance=8cm] (moh maya) {
+	    	Be happy with what you got sabmohmayahain :p
+	    	};
+
+	    \node [block, right of=whims of DUGC, node distance=8cm] (Dugc try){
+	    	Go talk to DUGC ang convince him.
+	    	};
+
+	    \node [block, left of = The phase of unknown, node distance=8cm] (add course) {
+	    	Send requests to new courses you want.
+	    	};
+	    \node [block, left of= Now Register, node distance=8cm] (drop courses) {
+	    	Drop the course you don't want.
+	    	};
+	    \node [block, left of = khushi manao, node distance = 8cm] (add drop) {
+	    	Add drop begins
+	    };
+	    \node [decision, left of = The decision period, node distance=8cm] (No likes given) {
+	    	Is add drop period over?
 	    	};
 	    % Draw edges
 	    \path [line] (init) -- (requests open);
@@ -78,7 +106,14 @@
 	    \path [line] (khushi manao) -- (courses begin);
 	    \path [line] (courses begin) -- (The decision period);
 	    \path [line] (The decision period) -- node {yes} (Be Happy);
-	  
+	  	\path [line] (Result of instructors decision) -- node {no}(Try again);
+	  	\path [line] (Try again) -- (ab bhi nahi mila);
+	  	\path [line] (ab bhi nahi mila) -- node {yes} (moh maya);
+	  	\path [line] (ab bhi nahi mila) |- node {no} (requests open);
+	  	\path [line] (moh maya) |- (courses begin);
+	  	\path [line] (whims of DUGC) -- node {no} (Dugc try);
+	  	\path [line] (Dugc try) |- (Now Register);
+	  	\path [line] (The decision period) -- (add drop);
 	\end{tikzpicture}
 }
 \end{document}
