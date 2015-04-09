@@ -18,7 +18,7 @@
 	rectangle, 
 	draw, 
 	fill=blue!20, 
-    text width=20em, 
+    text width=15em, 
     text centered, 
     rounded corners, 
     minimum height=4em
@@ -70,17 +70,17 @@
 	    	};
 	    
 
-	    \node [decision, right of= The phase of unknown, node distance = 8cm] (ab bhi nahi mila) {
+	    \node [decision, right of= The phase of unknown, node distance = 6cm] (ab bhi nahi mila) {
 	    	Is this is third time trying for same course
 	    	};
 	  	\node [block, below of = ab bhi nahi mila, node distance=4cm] (Try again) {
 	    	No problem go talk to the prof and request course again
 	    	};
-	    \node [block, right of = ab bhi nahi mila, node distance=8cm] (moh maya) {
+	    \node [block, right of = ab bhi nahi mila, node distance=6cm] (moh maya) {
 	    	Be happy with what you got sabmohmayahain :p
 	    	};
 
-	    \node [block, right of=whims of DUGC, node distance=8cm] (Dugc try){
+	    \node [block, right of=whims of DUGC, node distance=6cm] (Dugc try){
 	    	Go talk to DUGC ang convince him.
 	    	};
 
@@ -113,7 +113,12 @@
 	  	\path [line] (moh maya) |- (courses begin);
 	  	\path [line] (whims of DUGC) -- node {no} (Dugc try);
 	  	\path [line] (Dugc try) |- (Now Register);
-	  	\path [line] (The decision period) -- (add drop);
+	  	\path [line] (The decision period) -- (No likes given);
+	  	\path [line] (No likes given) -- node {no}(add drop);
+	  	\path [line] (add drop) -- (drop courses);
+	  	\path [line] (drop courses) -- (add course);
+	  	\path [line] (add course) |- (requests open);
+	  	\path [line] (No likes given) |- node {yes} (Be Happy);
 	\end{tikzpicture}
 }
 \end{document}
