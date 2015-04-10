@@ -1,0 +1,29 @@
+
+\begin{tikzpicture}[>=latex,line join=bevel,]
+\tikzstyle{every state}= [draw=black!120,very thick,fill=blue!20]%
+\node (a1) at (-52.828bp,-21.86bp) [draw,ellipse,state] {$a1$};
+  \node (a3) at (-8.108bp,10.57bp) [draw,ellipse,state] {$a3$};
+  \node (a2) at (46.642bp,33.784bp) [draw,ellipse,state] {$a2$};
+  \node (b1) at (46.057bp,-30.2bp) [draw,ellipse,state] {$b1$};
+  \node (b2) at (2.6843bp,-55.845bp) [draw,ellipse,state] {$b2$};
+  \node (b3) at (-34.447bp,63.55bp) [draw,ellipse,state] {$b3$};
+  \draw [->] (a3) ..controls (-24.85bp,29.19bp) and (-26.708bp,32.718bp)  .. (b3);
+  \draw [->] (b3) ..controls (0.99147bp,57.787bp) and (10.398bp,54.429bp)  .. (a2);
+  \draw [->] (a3) ..controls (2.5121bp,-13.006bp) and (3.9117bp,-20.456bp)  .. (b2);
+  \draw [->] (b3) ..controls (-33.917bp,33.819bp) and (-36.936bp,18.369bp)  .. (a1);
+  \draw [->] (a2) ..controls (38.794bp,2.293bp) and (29.985bp,-16.426bp)  .. (b2);
+  \draw [->] (b2) ..controls (-25.01bp,-46.787bp) and (-28.007bp,-45.008bp)  .. (a1);
+  \draw [->] (a1) ..controls (-53.358bp,7.8709bp) and (-50.34bp,23.321bp)  .. (b3);
+  \draw [->] (b2) ..controls (10.533bp,-24.354bp) and (19.342bp,-5.6349bp)  .. (a2);
+  \draw [->] (a1) ..controls (-25.134bp,-30.918bp) and (-22.137bp,-32.697bp)  .. (b2);
+  \draw [->] (b2) ..controls (-7.9359bp,-32.269bp) and (-9.3355bp,-24.818bp)  .. (a3);
+  \draw [->] (a1) ..controls (-14.652bp,-18.254bp) and (-0.76412bp,-19.272bp)  .. (b1);
+  \draw [->] (b1) ..controls (7.8811bp,-33.805bp) and (-6.0071bp,-32.788bp)  .. (a1);
+  \draw [->] (a2) ..controls (11.204bp,39.547bp) and (1.797bp,42.905bp)  .. (b3);
+  \draw [->] (a3) ..controls (18.923bp,-1.3355bp) and (22.907bp,-4.2499bp)  .. (b1);
+  \draw [->] (a2) ..controls (53.087bp,10.215bp) and (53.22bp,3.7798bp)  .. (b1);
+  \draw [->] (b1) ..controls (19.025bp,-18.294bp) and (15.041bp,-15.38bp)  .. (a3);
+  \draw [->] (b3) ..controls (-17.705bp,44.93bp) and (-15.847bp,41.402bp)  .. (a3);
+  \draw [->] (b1) ..controls (39.612bp,-6.6304bp) and (39.479bp,-0.1953bp)  .. (a2);
+%
+\end{tikzpicture}

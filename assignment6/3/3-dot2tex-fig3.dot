@@ -1,0 +1,9 @@
+        digraph G {
+          d2tdocpreamble = "\usetikzlibrary{automata}";
+          d2tfigpreamble = "\tikzstyle{every state}= [draw=black!120,very thick,fill=blue!20]";
+          node[style= "state"];
+          a1->b1; a1->b2; a1->b3;b1->a1; b1->a2; b1->a3;
+          a2->b1; a2->b2; a2->b3;b2->a1; b2->a2; b2->a3;
+          a3->b1; a3->b2; a3->b3;b3->a1; b3->a2; b3->a3;
+        }
+      

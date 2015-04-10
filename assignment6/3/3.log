@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.3.19)  10 APR 2015 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.3.19)  10 APR 2015 23:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -489,7 +489,7 @@ Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
 File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
 ))
 \verbatim@out=\write4
-runsystem(echo 'write18-test-20154101370'>"3.w18")...executed.
+runsystem(echo 'write18-test-20154101438'>"3.w18")...executed.
 
 \instream=\read3
 runsystem(rm -- "3.w18")...executed.
@@ -499,8 +499,7 @@ Package dot2texi Info: Automatically converting dot/neato files on input line 1
 \c@dtt@fignum=\count123
 )
 \c@theorem=\count124
-
-No file 3.aux.
+ (./3.aux)
 \openout1 = `3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -515,6 +514,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
+
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -584,29 +584,47 @@ Opening dot2tex stream 3-dot2tex-fig1.dot
 runsystem(dot2tex --figonly -ftikz      --prog=neato -tmath  -o 3-dot2tex-fig1.
 tex  3-dot2tex-fig1.dot)...executed.
 
-Package dot2texo Info: 3-dot2tex-fig1.dot converted on input line 39.
- (./3-dot2tex-fig1.tex) [1
+Package dot2texo Info: 3-dot2tex-fig1.dot converted on input line 36.
+ (./3-dot2tex-fig1.tex)
+\openout4 = `3-dot2tex-fig2.dot'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./3.aux) ) 
+
+Opening dot2tex stream 3-dot2tex-fig2.dot
+runsystem(dot2tex --figonly -ftikz      --prog=neato -tmath  -o 3-dot2tex-fig2.
+tex  3-dot2tex-fig2.dot)...executed.
+
+Package dot2texo Info: 3-dot2tex-fig2.dot converted on input line 51.
+ (./3-dot2tex-fig2.tex)
+\openout4 = `3-dot2tex-fig3.dot'.
+
+
+Opening dot2tex stream 3-dot2tex-fig3.dot
+runsystem(dot2tex --figonly -ftikz      --prog=neato -tmath  -o 3-dot2tex-fig3.
+tex  3-dot2tex-fig3.dot)...executed.
+
+Package dot2texo Info: 3-dot2tex-fig3.dot converted on input line 62.
+ (./3-dot2tex-fig3.tex) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./3.aux) ) 
 Here is how much of TeX's memory you used:
- 14950 strings out of 494978
- 316748 string characters out of 6180203
- 373179 words of memory out of 5000000
- 17877 multiletter control sequences out of 15000+600000
- 8408 words of font info for 31 fonts, out of 8000000 for 9000
+ 15066 strings out of 494978
+ 318496 string characters out of 6180203
+ 391930 words of memory out of 5000000
+ 17985 multiletter control sequences out of 15000+600000
+ 8715 words of font info for 32 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 55i,6n,70p,402b,740s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb>
-Output written on 3.pdf (1 page, 56808 bytes).
+ 55i,6n,70p,402b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb>
+Output written on 3.pdf (2 pages, 62916 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
