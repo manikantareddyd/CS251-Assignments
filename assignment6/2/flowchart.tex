@@ -39,7 +39,7 @@
 	\begin{tikzpicture}[node distance=3cm][scale = 2]
 		
 		% Place nodes
-		\node [block] (init) {
+		\node [cloud] (init) {
 			Pre Registration
 			};
 		\node [block, below of=init] (requests open) {
@@ -66,7 +66,7 @@
 		\node [decision, below of = courses begin] (The decision period){
 			Do you enjoy the course?
 			};
-		\node [block, below of = The decision period,node distance=4cm] (Be Happy) {
+		\node [cloud, below of = The decision period,node distance=4cm] (Be Happy) {
 			Be contended and Do the course for rest of the sem :P
 			};
 
@@ -115,7 +115,7 @@
 		\path [line] (moh maya) |- (courses begin);
 		\path [line] (whims of DUGC) -- node {no} (Dugc try);
 		\path [line] (Dugc try) |- (Now Register);
-		\path [line] (The decision period) -- (No likes given);
+		\path [line] (The decision period) -- node {no}(No likes given);
 		\path [line] (No likes given) -- node {no}(add drop);
 		\path [line] (add drop) -- (drop courses);
 		\path [line] (drop courses) -- (add course);
