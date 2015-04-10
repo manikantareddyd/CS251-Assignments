@@ -1,0 +1,11 @@
+Question1 can be found in 1
+Question2 can be found in 2
+Question3 can be found in 3
+
+compile every .tex file as
+
+pdflatex --shell-escape *.tex 
+
+Read the pdf using
+
+evince *.pdf
