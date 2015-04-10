@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\begin{document}
+
+% Define block styles
+\tikzstyle{decision} = [
+	diamond, 
+	draw, 
+	fill=blue!20, 
+	text width=5em, 
+	text badly centered, 
+	node distance=4cm, 
+	inner sep=0pt
+	]
+\tikzstyle{block} = [
+	rectangle, 
+	draw, 
+	fill=blue!20, 
+	text width=15em, 
+	text centered, 
+	rounded corners, 
+	minimum height=4em
+	]
+\tikzstyle{line} = [
+	draw, 
+	-latex'
+	]
+\tikzstyle{cloud} = [
+	draw, 
+	ellipse,
+	fill=red!20, 
+	node distance=4cm,
+	minimum height=2em
+	]
+
+%Image scaling to single page
+
+\resizebox{!}{19cm}{
+	\begin{tikzpicture}[node distance=3cm]
+		
+		% Place nodes
+		\node [block] (init) {
+			Pre Registration
+			};
+		\node [block, below of=init] (requests open) {
+			Course request through OARS begins (5.1)
+			};
+		\node [block, below of=requests open] (The phase of unknown) {
+			Instructors look at your requests and decide to whether to give you the course or not.
+			};
+		\node [decision, below of=The phase of unknown] (Result of instructors decision) {
+			Accepted into desired courses!
+			};
+		\node [block, below of=Result of instructors decision, node distance=4cm] (Now Register) {
+			Now fill the registeration form , submit it to DUGC and wait for his approval (5.2)
+			};
+		\node [decision, below of=Now Register] (whims of DUGC) {
+			Did the DUGC approve?
+			};
+		\node [block, below of=whims of DUGC, node distance=4cm] (khushi manao) {
+			Yay, you got all the courses you wanted to do :)
+			};
+		\node [block, below of = khushi manao] (courses begin) {
+			Attend the classes and see if you enjoy them
+			};
+		\node [decision, below of = courses begin] (The decision period){
+			Do you enjoy the course?
+			};
+		\node [block, below of = The decision period,node distance=4cm] (Be Happy) {
+			Be contended and Do the course for rest of the sem :P
+			};
+
+
+		\node [decision, right of= The phase of unknown, node distance = 6cm] (ab bhi nahi mila) {
+			Is this is third time trying for same course
+			};
+		\node [block, below of = ab bhi nahi mila, node distance=4cm] (Try again) {
+			No problem go talk to the prof and request course again
+			};
+		\node [block, right of = ab bhi nahi mila, node distance=6cm] (moh maya) {
+			Be happy with what you got sabmohmayahain :p
+			};
+
+		\node [block, right of=whims of DUGC, node distance=6cm] (Dugc try){
+			Go talk to DUGC ang convince him.
+			};
+
+		\node [block, left of = The phase of unknown, node distance=8cm] (add course) {
+			Send requests to new courses you want.
+			};
+		\node [block, left of= Now Register, node distance=8cm] (drop courses) {
+			Drop the course you don't want.
+			};
+		\node [block, left of = khushi manao, node distance = 8cm] (add drop) {
+			Add drop begins
+			};
+		\node [decision, left of = The decision period, node distance=8cm] (No likes given) {
+			Is add drop period over?
+			};
+
+		% Draw edges
+		\path [line] (init) -- (requests open);
+		\path [line] (requests open) -- (The phase of unknown);
+		\path [line] (The phase of unknown) -- (Result of instructors decision);
+		\path [line] (Result of instructors decision) -- node [near start] {yes} (Now Register);
+		\path [line] (Now Register) -- (whims of DUGC);
+		\path [line] (whims of DUGC) -- node{yes}(khushi manao);
+		\path [line] (khushi manao) -- (courses begin);
+		\path [line] (courses begin) -- (The decision period);
+		\path [line] (The decision period) -- node {yes} (Be Happy);
+		\path [line] (Result of instructors decision) -- node {no}(Try again);
+		\path [line] (Try again) -- (ab bhi nahi mila);
+		\path [line] (ab bhi nahi mila) -- node {yes} (moh maya);
+		\path [line] (ab bhi nahi mila) |- node {no} (requests open);
+		\path [line] (moh maya) |- (courses begin);
+		\path [line] (whims of DUGC) -- node {no} (Dugc try);
+		\path [line] (Dugc try) |- (Now Register);
+		\path [line] (The decision period) -- (No likes given);
+		\path [line] (No likes given) -- node {no}(add drop);
+		\path [line] (add drop) -- (drop courses);
+		\path [line] (drop courses) -- (add course);
+		\path [line] (add course) |- (requests open);
+		\path [line] (No likes given) |- node {yes} (Be Happy);
+	
+	\end{tikzpicture}
+	}
+
+\end{document}
