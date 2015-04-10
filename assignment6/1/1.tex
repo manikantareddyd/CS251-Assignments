@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{pgfplotstable}
+\usepackage{pgfplots}
+\pagestyle{empty}
+\begin{document}
+\vspace{2cm}
+
+\pgfkeys
+	{
+		/pgfplots/scale/.style=
+		{
+			x post scale=#1,
+			y post scale=#1,
+			z post scale=#1
+		}
+	}
+
+\pgfkeys
+	{
+		/pgfplots/axis labels at tip/.style=
+		{
+			xlabel style={at={(current axis.right of origin)}, xshift=1.5ex, anchor=center},
+			ylabel style={at={(current axis.above origin)}, yshift=1.5ex, anchor=center}
+		}
+	}
+
+\resizebox{15cm}{!}{
+	\begin{tikzpicture}[scale=0.5]
+		\begin{axis}[
+			xlabel=X,
+			ylabel=Y
+			]
+			\addplot[mark=none,color=red] table [x=P, y=$Q_A$]{
+				data.dat
+				};
+			\addlegendentry{
+				Binomial
+				}
+			\addplot[mark=none,color=orange] table [x=P, y=$Q_B$]{
+				data.dat
+				};
+			\addlegendentry{
+				Poisson
+				}
+			\addplot[mark=none,color=green] table [x=P, y=$Q_D$]{
+				data.dat
+				};
+			\addlegendentry{
+				Gaussian
+				}
+		\end{axis}
+	\end{tikzpicture}
+}
+\end{document}
