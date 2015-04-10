@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%% Tikz and pgf %%%%%%%%%%%%%%%%%%%%%5
+\usepackage{tikz}
+\usepackage{pgfmath}
+\usetikzlibrary{positioning, arrows,automata}
+\usetikzlibrary{shapes}
+\usepackage{dot2texi}
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+\title{How to make money using Number theory?}
+\author{Dofus M Bofus}
+
+\begin{document}
+
+\maketitle
+
+\section{Peterson's Graph}
+
+
+\begin{dot2tex}[neato,mathmode]
+  digraph G {
+  d2tdocpreamble = "\usetikzlibrary{automata}";
+d2tfigpreamble = "\tikzstyle{every state}= \
+[draw=black!120,very thick,fill=blue!20]";
+    node[style="state"];
+    a_1 -> b_1; 
+    a_2 -> b_2;
+    a_3 -> b_3;a_1 -> a_2 -> a_3 -> a_4 -> a_5 -> a_1;
+    a_4 -> b_4;
+    a_5 -> b_5;
+    
+    b_1 -> b_2 -> b_3 -> b_4 -> b_5 -> b_1;
+  }
+\end{dot2tex}
+
+
+
+
+\end{document}
