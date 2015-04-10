@@ -2,9 +2,11 @@
 \usepackage{pgfplotstable}
 \usepackage{pgfplots}
 \pagestyle{empty}
-
+\title{Various Probability Distributions}
+\date{}
+\author{Manikanta Reddy}
 \begin{document}
-
+\maketitle
 \vspace{2cm}
 
 \pgfkeys
@@ -27,7 +29,10 @@
 
 \resizebox{15cm}{!}{
 	\begin{tikzpicture}
-    \node[draw] at (5.5,3) {scale =lol};
+    \node[draw,align=left] at (4.9,3.4) {
+      Scale\\
+      X axis : 1 unit = 10\\
+      Y axis : 1 unit = 0.05};
 		\begin{axis}[
 			xlabel=X,
 			ylabel=Y
