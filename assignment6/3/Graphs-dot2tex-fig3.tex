@@ -1,0 +1,20 @@
+
+\begin{tikzpicture}[>=latex,line join=bevel,]
+\tikzstyle{every state}= [draw=black!120,very thick,fill=blue!20]%
+\node (a1) at (-52.828bp,-21.86bp) [draw,ellipse,state] {$a1$};
+  \node (a3) at (-8.108bp,10.57bp) [draw,ellipse,state] {$a3$};
+  \node (a2) at (46.642bp,33.784bp) [draw,ellipse,state] {$a2$};
+  \node (b1) at (46.057bp,-30.2bp) [draw,ellipse,state] {$b1$};
+  \node (b2) at (2.6843bp,-55.845bp) [draw,ellipse,state] {$b2$};
+  \node (b3) at (-34.447bp,63.55bp) [draw,ellipse,state] {$b3$};
+  \draw [->] (a3) ..controls (-18.203bp,30.875bp) and (-19.759bp,34.006bp)  .. (b3);
+  \draw [->] (a3) ..controls (-4.1596bp,-13.728bp) and (-3.0182bp,-20.752bp)  .. (b2);
+  \draw [->] (a1) ..controls (-46.469bp,7.6904bp) and (-43.239bp,22.697bp)  .. (b3);
+  \draw [->] (a1) ..controls (-30.613bp,-35.46bp) and (-28.37bp,-36.833bp)  .. (b2);
+  \draw [->] (a1) ..controls (-15.125bp,-25.04bp) and (-2.6704bp,-26.09bp)  .. (b1);
+  \draw [->] (a2) ..controls (31.781bp,3.4834bp) and (22.914bp,-14.598bp)  .. (b2);
+  \draw [->] (a2) ..controls (15.245bp,45.309bp) and (6.8172bp,48.403bp)  .. (b3);
+  \draw [->] (a3) ..controls (13.092bp,-5.3872bp) and (16.442bp,-7.9088bp)  .. (b1);
+  \draw [->] (a2) ..controls (46.427bp,10.263bp) and (46.372bp,4.2651bp)  .. (b1);
+%
+\end{tikzpicture}

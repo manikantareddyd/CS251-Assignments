@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.3.19)  10 APR 2015 23:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.3.19)  15 APR 2015 14:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**3.tex
-(./3.tex
+**Graphs.tex
+(./Graphs.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -489,18 +489,19 @@ Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
 File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
 ))
 \verbatim@out=\write4
-runsystem(echo 'write18-test-20154101438'>"3.w18")...executed.
+runsystem(echo 'write18-test-2015415872'>"Graphs.w18")...executed.
 
 \instream=\read3
-runsystem(rm -- "3.w18")...executed.
+runsystem(rm -- "Graphs.w18")...executed.
 
 Package dot2texi Info: Automatically converting dot/neato files on input line 1
 48.
 \c@dtt@fignum=\count123
 )
 \c@theorem=\count124
- (./3.aux)
-\openout1 = `3.aux'.
+
+(./Graphs.aux)
+\openout1 = `Graphs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -514,8 +515,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count125
@@ -577,51 +577,52 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\openout4 = `3-dot2tex-fig1.dot'.
+\openout4 = `Graphs-dot2tex-fig1.dot'.
 
 
-Opening dot2tex stream 3-dot2tex-fig1.dot
-runsystem(dot2tex --figonly -ftikz      --prog=neato -tmath  -o 3-dot2tex-fig1.
-tex  3-dot2tex-fig1.dot)...executed.
+Opening dot2tex stream Graphs-dot2tex-fig1.dot
+runsystem(dot2tex --figonly -ftikz      --prog=neato -tmath  -o Graphs-dot2tex-
+fig1.tex  Graphs-dot2tex-fig1.dot)...executed.
 
-Package dot2texo Info: 3-dot2tex-fig1.dot converted on input line 36.
- (./3-dot2tex-fig1.tex)
-\openout4 = `3-dot2tex-fig2.dot'.
-
-
-Opening dot2tex stream 3-dot2tex-fig2.dot
-runsystem(dot2tex --figonly -ftikz      --prog=neato -tmath  -o 3-dot2tex-fig2.
-tex  3-dot2tex-fig2.dot)...executed.
-
-Package dot2texo Info: 3-dot2tex-fig2.dot converted on input line 51.
- (./3-dot2tex-fig2.tex)
-\openout4 = `3-dot2tex-fig3.dot'.
+Package dot2texo Info: Graphs-dot2tex-fig1.dot converted on input line 36.
+ (./Graphs-dot2tex-fig1.tex)
+\openout4 = `Graphs-dot2tex-fig2.dot'.
 
 
-Opening dot2tex stream 3-dot2tex-fig3.dot
-runsystem(dot2tex --figonly -ftikz      --prog=neato -tmath  -o 3-dot2tex-fig3.
-tex  3-dot2tex-fig3.dot)...executed.
+Opening dot2tex stream Graphs-dot2tex-fig2.dot
+runsystem(dot2tex --figonly -ftikz      --prog=neato -tmath  -o Graphs-dot2tex-
+fig2.tex  Graphs-dot2tex-fig2.dot)...executed.
 
-Package dot2texo Info: 3-dot2tex-fig3.dot converted on input line 62.
- (./3-dot2tex-fig3.tex) [1
+Package dot2texo Info: Graphs-dot2tex-fig2.dot converted on input line 51.
+ (./Graphs-dot2tex-fig2.tex)
+\openout4 = `Graphs-dot2tex-fig3.dot'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./3.aux) ) 
+
+Opening dot2tex stream Graphs-dot2tex-fig3.dot
+runsystem(dot2tex --figonly -ftikz      --prog=neato -tmath  -o Graphs-dot2tex-
+fig3.tex  Graphs-dot2tex-fig3.dot)...executed.
+
+Package dot2texo Info: Graphs-dot2tex-fig3.dot converted on input line 62.
+ (./Graphs-dot2tex-fig3.tex)
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Graphs.aux) ) 
 Here is how much of TeX's memory you used:
- 15066 strings out of 494978
- 318496 string characters out of 6180203
- 391930 words of memory out of 5000000
- 17985 multiletter control sequences out of 15000+600000
+ 15060 strings out of 494978
+ 318455 string characters out of 6180203
+ 389429 words of memory out of 5000000
+ 17979 multiletter control sequences out of 15000+600000
  8715 words of font info for 32 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 55i,6n,70p,402b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb>
-Output written on 3.pdf (2 pages, 62916 bytes).
+ 55i,6n,70p,407b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb>
+Output written on Graphs.pdf (2 pages, 62372 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
